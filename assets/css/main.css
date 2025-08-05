@@ -572,6 +572,29 @@ section,
   font-family: var(--heading-font);
 }
 
+/* Extra classes */
+.card {
+  width: fit-content;
+  background-color: var(--default-color);
+  align-items: center;
+  display: contents;
+}
+.card p{
+  align-items: center;
+  color: var(--default-color);
+}
+
+.recipe1{
+  color: var(--accent-color); 
+}
+
+.section .container{
+  align-items: center;
+  background-color: var(--default-color);
+  border-radius: 3px solid blue;
+}
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/

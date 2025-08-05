@@ -1,4 +1,4 @@
-<?php include 'templates/header.html';?>
+<?php include '../templates/header.html';?>
 
 <main class="main">
     <section class="section dark-background">
@@ -7,4 +7,4 @@
             <p class="section-description">This is a delicious recipe that you will love!</p>
         </div>
     </section>
-<?php include 'templates/footer.html';?>
+<?php include '../templates/footer.html';?>
