@@ -4,41 +4,6 @@
   --nav-font: "Poppins",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #0c0b09; /* Background color for the entire website, including individual sections */
-  --default-color: rgba(255, 255, 255, 0.7); /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #cda45e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #29261f; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #0c0b09; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-}
-
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-:root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #cda45e; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #29261f; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #29261f; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #ffffff; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #cda45e; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-}
-
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
-
-.light-background {
-  --background-color: #29261f;
-  --surface-color: #464135;
-}
-
-.dark-background {
-  --background-color: #000000;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #1a1a1a;
-  --contrast-color: #ffffff;
-}
-
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
@@ -54,19 +19,20 @@
 }
 
 body {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  /* background-color: #f7f5f0; */
   font-family: var(--default-font);
+  margin: 0;
+  background: #fff; /* Optional, for consistent background outside the hero */
 }
 
 a {
-  color: var(--accent-color);
+  color: black;
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color: color-mix(in srgb, white, transparent 25%);
   text-decoration: none;
 }
 
@@ -80,22 +46,26 @@ h6 {
   font-family: var(--heading-font);
 }
 .header {
-  --background-color: rgba(39, 29, 10, 0.61);
+  background-color: orange;
   color: var(--default-color);
   transition: all 0.5s;
   z-index: 997;
+  margin-bottom: 5px;
 }
 
 .header .branding {
-  background-color: var(--background-color);
+  background-color: orange;
   min-height: 60px;
-  padding: 10px 0;
+  padding: 5px 0;
   transition: 0.3s;
-  border-bottom: 1px solid var(--background-color);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header .logo {
   line-height: 1;
+  padding: 5px;
+  margin: 5px;
+  /* margin-bottom: 10p; */
 }
 
 .header .logo img {
@@ -107,11 +77,11 @@ h6 {
   font-size: 30px;
   margin: 0;
   font-weight: 700;
-  color: var(--heading-color);
+  color: black;
 }
 
 .scrolled .header .branding {
-  border-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-color: color-mix(in srgb, orange, transparent 80%);
 }
 
 /* Global Header on Scroll
@@ -187,7 +157,7 @@ h6 {
 
   .navmenu {
     padding: 0;
-    z-index: 9997;
+    z-index: 997;
   }
 
   .navmenu ul {
@@ -231,13 +201,13 @@ h6 {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    background-color: color-mix(in srgb, orange, transparent 90%);
   }
 
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
+    background-color: orange;
+    color: black;
   }
 
   .navmenu a:hover,
@@ -248,30 +218,9 @@ h6 {
 
   .navmenu .active i,
   .navmenu .active:focus i {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
+    background-color: orange;
+    color: black;
     transform: rotate(180deg);
-  }
-
-  .navmenu .dropdown ul {
-    position: static;
-    display: none;
-    z-index: 99;
-    padding: 10px 0;
-    margin: 10px 20px;
-    background-color: var(--nav-dropdown-background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    box-shadow: none;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .navmenu .dropdown ul ul {
-    background-color: rgba(33, 37, 41, 0.1);
-  }
-
-  .navmenu .dropdown>.dropdown-active {
-    display: block;
-    background-color: rgba(33, 37, 41, 0.03);
   }
 
   .mobile-nav-active {
@@ -306,8 +255,8 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: black;
+  background-color: orange;
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
@@ -356,8 +305,8 @@ h6 {
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: orange;
+  border-color: orange;
 }
 
 .footer h4 {
@@ -400,7 +349,7 @@ h6 {
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+  color: orange;
 }
 
 .footer .footer-contact p {
@@ -433,7 +382,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: orange;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -442,13 +391,13 @@ h6 {
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--contrast-color);
+  color: black;
   line-height: 0;
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  color: var(--contrast-color);
+  background-color: color-mix(in srgb, orange, transparent 20%);
+  color: black;
 }
 
 .scroll-top.active {
@@ -469,9 +418,9 @@ h6 {
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  background-size: cover;
+  color: rgb(232, 155, 47);
+  /* background-image: url('../img/hero.jpg'); */
+  background-size: fit-content;
   background-position: center;
   background-repeat: no-repeat;
   padding: 160px 0 80px 0;
@@ -479,17 +428,21 @@ h6 {
   position: relative;
 }
 
+/* .container .h1 { */
+  
+/* } */
+
 .page-title:before {
   content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 30%);
+  background-color: color-mix(in srgb, rgba(58, 55, 55, 0.956), transparent 60%);
   position: absolute;
   inset: 0;
 }
 
 .page-title h1 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-size: 62px;
+  font-weight: 800;
+  margin-bottom: 15px;
 }
 
 .page-title .breadcrumbs ol {
@@ -518,13 +471,11 @@ h6 {
 # Global Sections
 --------------------------------------------------------------*/
 section,
-.section {
-  color: var(--default-color);
-  --background-color: rgb(250, 250, 250);
-  padding: 60px 0;
+.section { 
+  padding: 60px 10;
   scroll-margin-top: 77px;
   overflow: clip;
-  border-radius: 20px red;
+  /* margin: 20px; */
 }
 
 @media (max-width: 1199px) {
@@ -543,7 +494,7 @@ section,
   position: relative;
 }
 
-.section-title h2 {
+.section-title h1 {
   font-size: 14px;
   font-weight: 500;
   padding: 0;
@@ -551,28 +502,42 @@ section,
   margin: 0;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, black, transparent 30%);
   position: relative;
 }
 
-.section-title h2::after {
+.section-title h1::after {
   content: "";
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: var(--accent-color);
+  background: orange;
+  background-size: contain;
   margin: 4px 10px;
+  align-self: center;
+  padding : 30px;
 }
 
 .section-title p {
-  color: var(--accent-color);
+  color: orange;
   margin: 0;
   font-size: 36px;
   font-weight: 600;
   font-family: var(--heading-font);
 }
 
+/* ===================
+   Global Main Class
+======================*/
+.main {
+  padding: 40px;
+  margin-top: 10px;
+  align-items: center;
+  /* display: flex; */
+}
+
 /* Extra classes */
+
 .card {
   width: fit-content;
   background-color: var(--default-color);
@@ -585,133 +550,102 @@ section,
 }
 
 .recipe1{
-  color: var(--accent-color); 
+  color: orange; 
 }
 
-.section .container{
+.container{
   align-items: center;
-  background-color: var(--default-color);
-  border-radius: 3px solid blue;
+  max-width: unset;
+  padding: 10px;
+  margin: 15px;
 }
 
+.container{
+  
+}
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-/* Main hero section */
+/*===================
+        Hero
+=====================*/
 .hero {
+  position: relative;
   width: 100%;
   min-height: 100vh;
-  position: relative;
-  padding: 80px 0;
+  padding: 40px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  margin-top: 0 !important;
 }
 
 .hero img {
   position: absolute;
   inset: 0;
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
 }
 
-/* Optional overlay */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: color-mix(in srgb, var(--background-color), transparent 50%);
-  z-index: 1;
+  background: color-mix(in srgb, orange, transparent 50%);
+  z-index: 2;
 }
 
-/* Content inside hero */
+/* Text container */
 .hero .container {
   position: relative;
   z-index: 1;
-  max-width: 1200px;
-  width: 100%;
 }
 
-/* Typography */
-.hero h2 {
-  font-size: 48px;
+/* Text content */
+.hero .page-title,
+.hero p {
+  color: black;
+  position: relative;
+  z-index: 3;
+  margin: 0;
+}
+
+.hero .page-title {
+  background: orange;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: clamp(28px, 6vw, 48px);
   font-weight: 700;
-  color: var(--default-color);
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 24px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-size: clamp(16px, 3vw, 24px);
+  max-width: 600px;
 }
 
-/* CTA button styles */
-.hero .cta-btn {
-  padding: 8px 30px;
-  border-radius: 50px;
-  font-size: 14px;
-  border: 2px solid var(--accent-color);
-  color: var(--default-color);
-  text-transform: uppercase;
-  transition: 0.3s;
-}
-
-.hero .cta-btn:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-}
-
-/* 📱 Responsive media queries */
-@media (max-width: 992px) {
-  .hero {
-    padding: 60px 20px;
-    height: auto; /* Allow content to define height */
-  }
-
-  .hero h2 {
-    font-size: 36px;
-  }
-
-  .hero p {
-    font-size: 20px;
-  }
-}
-
+/* Responsive utility */
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column;
-    padding: 40px 15px;
-  }
-
-  .hero h2 {
-    font-size: 28px;
+    padding: inherit;
     text-align: center;
   }
 
-  .hero p {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .hero .container {
-    text-align: center;
+  .hero .col-lg-8 {
+    align-items: center !important;
   }
 }
 
 @media (max-width: 480px) {
-  .hero h2 {
+  .hero .page-title {
     font-size: 24px;
+    padding: 0.4rem 0.8rem;
   }
 
   .hero p {
     font-size: 16px;
-  }
-
-  .hero .cta-btn {
-    font-size: 12px;
-    padding: 6px 20px;
   }
 }
 
@@ -746,7 +680,7 @@ section,
 }
 
 .about .content .fst-italic {
-  color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
+  color: color-mix(in srgb, var(--default-color), black 50%);
 }
 
 .about .content ul {
@@ -760,7 +694,7 @@ section,
 }
 
 .about .content ul i {
-  color: var(--accent-color);
+  color: orange;
   margin-right: 0.5rem;
   line-height: 1.2;
   font-size: 1.25rem;
@@ -771,7 +705,7 @@ section,
 }
 
 .about .about-img {
-  border: 6px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  border: 6px solid color-mix(in srgb, black, transparent 80%);
   transition: 0.3s;
 }
 
@@ -779,52 +713,6 @@ section,
   transform: scale(1.03);
 }
 
-/*--------------------------------------------------------------
-# Why Us Section
---------------------------------------------------------------*/
-.why-us .card-item {
-  background: color-mix(in srgb, var(--default-color), transparent 95%);
-  padding: 50px 30px;
-  transition: all ease-in-out 0.3s;
-  height: 100%;
-  position: relative;
-}
-
-.why-us .card-item span {
-  color: var(--accent-color);
-  display: block;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.why-us .card-item h4 {
-  font-size: 24px;
-  font-weight: 600;
-  padding: 0;
-  margin: 20px 0;
-}
-
-.why-us .card-item h4 a {
-  color: var(--heading-color);
-}
-
-.why-us .card-item p {
-  font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  margin: 0;
-  padding: 0;
-}
-
-.why-us .card-item:hover {
-  background: var(--accent-color);
-  padding: 30px 30px 70px 30px;
-}
-
-.why-us .card-item:hover span,
-.why-us .card-item:hover h4 a,
-.why-us .card-item:hover p {
-  color: var(--contrast-color);
-}
 
 /*--------------------------------------------------------------
 # Menu Section
@@ -856,7 +744,7 @@ section,
 
 .menu .menu-filters li:hover,
 .menu .menu-filters li.filter-active {
-  color: var(--accent-color);
+  color: orange;
 }
 
 .menu .menu-filters li:last-child {
@@ -905,12 +793,12 @@ section,
 }
 
 .menu .menu-content a:hover {
-  color: var(--accent-color);
+  color: orange;
 }
 
 .menu .menu-content span {
   background: var(--background-color);
-  color: var(--accent-color);
+  color: orange;
   position: relative;
   z-index: 3;
   padding: 0 10px;
@@ -942,18 +830,18 @@ section,
   transition: 0.3s;
   color: var(--heading-color);
   border-radius: 0;
-  border-right: 2px solid var(--accent-color);
+  border-right: 2px solid orange;
   font-weight: 600;
   font-size: 15px;
 }
 
 .specials .nav-link:hover {
-  color: var(--accent-color);
+  color: orange;
 }
 
 .specials .nav-link.active {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
+  color: black;
+  background-color: orange;
 }
 
 .specials .tab-pane.active {
@@ -981,8 +869,8 @@ section,
   }
 
   .specials .nav-link.active {
-    color: var(--accent-color);
-    background: var(--accent-color);
+    color: orange;
+    background: orange;
   }
 }
 
@@ -1037,7 +925,7 @@ section,
 }
 
 .events .event-item .price span {
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 2px solid orange;
 }
 
 .events .event-item ul {
@@ -1052,7 +940,7 @@ section,
 .events .event-item ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: var(--accent-color);
+  color: orange;
 }
 
 .events .event-item p:last-child {
@@ -1076,7 +964,7 @@ section,
 }
 
 .events .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: orange;
 }
 
 /*--------------------------------------------------------------
@@ -1115,7 +1003,7 @@ section,
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  color: color-mix(in srgb, orange, transparent 50%);
   font-size: 26px;
   line-height: 0;
 }
@@ -1159,11 +1047,11 @@ section,
   height: 12px;
   background-color: var(--background-color);
   opacity: 1;
-  border: 1px solid var(--accent-color);
+  border: 1px solid orange;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: orange;
 }
 
 /*--------------------------------------------------------------
@@ -1216,7 +1104,7 @@ section,
 }
 
 .chefs .member .member-info-content h4 {
-  color: var(--contrast-color);
+  color: black;
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
@@ -1246,7 +1134,7 @@ section,
 }
 
 .chefs .member .social a:hover {
-  color: var(--accent-color);
+  color: orange;
 }
 
 .chefs .member .social i {
@@ -1275,7 +1163,7 @@ section,
 --------------------------------------------------------------*/
 .contact {
   background-color: color-mix(in srgb, var(--background-color) 90%, white 5%);
-  border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-bottom: 1px solid color-mix(in srgb, orange, transparent 90%);
 }
 
 .contact .info-item+.info-item {
@@ -1283,8 +1171,8 @@ section,
 }
 
 .contact .info-item i {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  color: black;
+  background: orange;
   font-size: 20px;
   width: 44px;
   height: 44px;
@@ -1322,32 +1210,32 @@ section,
   border-radius: 0;
   color: var(--default-color);
   background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+  border-color: color-mix(in srgb, orange, transparent 70%);
 }
 
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
+  border-color: orange;
 }
 
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  color: color-mix(in srgb, orange, transparent 50%);
 }
 
 .contact .php-email-form button[type=submit] {
   color: var(--default-color);
   background: none;
-  border: 2px solid var(--accent-color);
+  border: 2px solid orange;
   padding: 8px 36px;
   transition: 0.4s;
   border-radius: 50px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: var(--accent-color);
+  background: orange;
 }
 
 /*--------------------------------------------------------------
