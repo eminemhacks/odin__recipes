@@ -72,7 +72,7 @@
           <div class="container meatloaf-info" data-aos="fade-up" data-aos-delay="100">
             <div class="row g-4 align-items-start">
               <!-- Image Column -->
-                <div class="col-12 col-lg-4 col-md-5">
+              <div class="col-12 col-lg-4 col-md-5">
                     <div class="border-0 shadow-sm">
                         <img class="img-fluid meatloaf-info-img" src="../assets/img/recipe-list/italian-pasta-salad.jpg" alt="Italian Pasta Salad"/>
                         <div class="nutrition-facts mt-3 text-white">
@@ -92,7 +92,9 @@
                                 <p>15g <strong>Protein</strong></p>
                             </div>
                         </div>
-                    </div>
+                    </div><br>
+                    <h2>Allrecipes Community Tips and Praise</h2>
+                    <p>“The best recipe ever,” raves The happy traveller. “My husband was licking the empty bowl. I added cherry tomatoes and will go lighter on the red onion next time.”<br> <br>“Delicious,” according to one Allrecipes community member. “Looking for a recipe for a summer family reunion, with no mayo. This was perfect! Even looks nice.”<br> <br>“Yummy and easy,” says another community member. “I don't worry about the color of the peppers — I use whatever I have on hand. Hubby isn't a fan of raw onions, so I add chopped chives instead which are much milder, but still give a hint of onion taste.”<br> <br>Editorial contributions by Corey Williams</p>
               </div>
 
               <!-- Content Column -->
@@ -118,8 +120,6 @@
                 </ol>
                 <h2>Can You Make Italian Pasta Salad Ahead of Time?</h2>
                 <p>This Italian pasta salad is a great make-ahead potluck dish. In fact, since the flavors will continue to meld as they sit together in the fridge, this dish might actually taste better if you make it a day in advance. </p>
-                <h2>Allrecipes Community Tips and Praise</h2>
-                <p>“The best recipe ever,” raves The happy traveller. “My husband was licking the empty bowl. I added cherry tomatoes and will go lighter on the red onion next time.”<br> <br>“Delicious,” according to one Allrecipes community member. “Looking for a recipe for a summer family reunion, with no mayo. This was perfect! Even looks nice.”<br> <br>“Yummy and easy,” says another community member. “I don't worry about the color of the peppers — I use whatever I have on hand. Hubby isn't a fan of raw onions, so I add chopped chives instead which are much milder, but still give a hint of onion taste.”<br> <br>Editorial contributions by Corey Williams</p>
               </div>
             </div>
           </div>
