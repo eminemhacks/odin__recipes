@@ -55,12 +55,9 @@
         <div class="col-lg-12 d-flex justify-content-center">
           <ul class="recipe-list-filters isotope-filters">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-meatloafs">MEATLOAF</li>
-            <li data-filter=".filter-beef">BEEF</li>
-            <li data-filter=".filter-italian-chicken">ITALIAN CHICKEN</li>
-            <li data-filter=".filter-specialty">Specialty</li>
-            <li data-filter=".filter-specialty">Specialty</li>
-            <li data-filter=".filter-specialty">Specialty</li>
+            <li data-filter=".filter-meatloafs">Meatloaf</li>
+            <li data-filter=".filter-beef">Beef</li>
+            <li data-filter=".filter-italian">Italian</li>
           </ul>
         </div>
       </div><!-- Recipe Filters -->
@@ -68,25 +65,25 @@
         <div class="col-lg-6 recipe-list-item isotope-item filter-meatloafs">
           <img src="../assets/img/recipe-list/classic_meatloaf.jpg" class="recipe-list-img" alt="">
           <div class="recipe-list-content">
-            <a href="../recipes/meatloaf_1.php">Classic Meatloaf</a><span>45 Ratings</span>
+            <a href="../recipes/classic-meatloaf.php">Classic Meatloaf</a><span>4.6 (670 Ratings) <strong>549 Reviews</strong></span>
           </div>
           <div class="recipe-list-ingredients">
             A hearty, no-fuss favorite—this classic meatloaf delivers rich, savory flavor with every comforting slice.
           </div>
         </div><!-- Menu Item -->
-        <div class="col-lg-6 recipe-list-item isotope-item filter-italian-chicken">
-          <img src="../assets/img/recipe-list/bread-barrel.jpg" class="recipe-list-img" alt="">
+        <div class="col-lg-6 recipe-list-item isotope-item filter-italian">
+          <img src="../assets/img/recipe-list/italian-pasta-salad.jpg" class="recipe-list-img" alt="">
           <div class="recipe-list-content">
-            <a href="#"></a><span>4.5 (695 Ratings)</span>
+            <a href="../recipes/italian-pasta-salad.php">Italian Pasta Salad</a><span>4.8 (Ratings) <strong>139 Reviews</strong></span>
           </div>
           <div class="recipe-list-ingredients">
-            Lorem, deren, trataro, filede, nerada
+            Italian Pasta Salad is a zesty, colorful mix of pasta, fresh vegetables, salami, cheese, and Italian dressing—served chilled for a refreshing side or light meal.
           </div>
         </div><!-- Menu Item -->
         <div class="col-lg-6 recipe-list-item isotope-item filter-meatloafs">
           <img src="../assets/img/recipe-list/dill_pickle_meatloaf.png" class="recipe-list-img" alt="">
           <div class="recipe-list-content">
-            <a href="#">Dill Pickle Meatloaf</a><span>4.5 (695 Ratings)</span>
+            <a href="../recipes/dill-pickle-meatloaf.php">Dill Pickle Meatloaf</a><span>4.4 (376 Ratings) <strong>305 Reviews</strong></span>
           </div>
           <div class="recipe-list-ingredients">
             A tangy twist on a classic, this dill pickle meatloaf blends savory beef with zesty pickle flavor for a bold, delicious bite.
@@ -95,34 +92,35 @@
         <div class="col-lg-6 recipe-list-item isotope-item filter-beef">
           <img src="../assets/img/recipe-list/beef-taco-meat.png" class="recipe-list-img" alt="">
           <div class="recipe-list-content">
-            <a href="#">Ground Beef Taco Meat</a><span>4.5 (695 Ratings)</span>
+            <a href="../recipes/beef-taco-meat.php">Ground Beef Taco Meat</a><span>4.5 (395 Ratings) <strong>225 Reviews</strong></span>
           </div>
           <div class="recipe-list-ingredients">
             Bold, seasoned, and ready in minutes—this ground beef taco meat is the perfect filling for tacos, bowls, and more.
           </div>
         </div><!-- Menu Item -->
-        <div class="col-lg-6 recipe-list-item isotope-item filter-italian-chicken">
-          <img src="../assets/img/recipe-list/tuscan-grilled.jpg" class="recipe-list-img" alt="">
+        <div class="col-lg-6 recipe-list-item isotope-item filter-italian">
+          <img src="../assets/img/recipe-list/italian-lasagna.jpg" class="recipe-list-img" alt="">
           <div class="recipe-list-content">
-            <a href="#">Tuscan Grilled</a><span>4.5 (695 Ratings)</span>
+            <a href="../recipes/italian-lasagna.php">Italian Lasagna</a><span>4.2 (89 Ratings) <strong>89 Reviews</strong></span>
           </div>
           <div class="recipe-list-ingredients">
             Bold, seasoned, and ready in minutes—this ground beef taco meat is the perfect filling for tacos, bowls, and more.
           </div>
         </div><!-- Menu Item -->
         <div class="col-lg-6 recipe-list-item isotope-item filter-meatloafs">
-          <img src="../assets/img/recipe-list/mozzarella.jpg" class="recipe-list-img" alt="">
+          <img src="../assets/img/recipe-list/tenesse-meatloaf.jpg" class="recipe-list-img" alt="">
           <div class="recipe-list-content">
-            <a href="#">Mozzarella Stick</a><span>4.5 (695 Ratings)</span>
+            <a href="../recipes/tennese-meatloaf.php">Tennessee Meatloaf</a><span>4.6 (167 Ratings) <strong>138 Reviews</strong></span>
           </div>
           <div class="recipe-list-ingredients">
-            Lorem, deren, trataro, filede, nerada
+            Tennessee Meatloaf is a hearty blend of ground meats, oats, and spices, topped with a sweet and tangy ketchup glaze for classic Southern comfort.
+
           </div>
         </div><!-- Menu Item -->
         <div class="col-lg-6 recipe-list-item isotope-item filter-beef">
           <img src="../assets/img/recipe-list/crispy-fried-ground-beef-tacos.jpg" class="recipe-list-img" alt="">
           <div class="recipe-list-content">
-            <a href="#">Crispy Fried Ground Beef Tacos</a><span>4.5 (695 Ratings)</span>
+            <a href="../recipes/crispy-fried-beef-taco.php">Crispy Fried Ground Beef Tacos</a><span>4.5 (695 Ratings) <strong>376 Reviews</strong></span>
           </div>
           <div class="recipe-list-ingredients">
             Fresh spinach, crisp romaine, tomatoes, and Greek olives
@@ -131,16 +129,16 @@
         <div class="col-lg-6 recipe-list-item isotope-item filter-beef">
           <img src="../assets/img/recipe-list/cattle-ranch-casserole.jpg" class="recipe-list-img" alt="">
           <div class="recipe-list-content">
-            <a href="#">Cattle Ranch Casserole</a><span>4.5 (695 Ratings)</span>
+            <a href="../recipes/cattle-ranch-casserole.php">Cattle Ranch Casserole</a><span>4.5 (695 Ratings) <strong>376 Reviews</strong></span>
           </div>
           <div class="recipe-list-ingredients">
             Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
           </div>
         </div><!-- Menu Item -->
-        <div class="col-lg-6 recipe-list-item isotope-item filter-italian-chicken">
-          <img src="../assets/img/recipe-list/recipe-list/lobster-roll.jpg" class="recipe-list-img" alt="">
+        <div class="col-lg-6 recipe-list-item isotope-item filter-italian">
+          <img src="../assets/img/recipe-list/italian-beef-sandwich.jpg" class="recipe-list-img" alt="">
           <div class="recipe-list-content">
-            <a href="#">Lobster Roll</a><span>4.5 (695 Ratings)</span>
+            <a href="../recipes/italian-beef-sandwich.php">Italian Beef Sandwich</a><span>4.5 (695 Ratings) <strong>376 Reviews</strong></span>
           </div>
           <div class="recipe-list-ingredients">
             Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
