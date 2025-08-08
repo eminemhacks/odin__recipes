@@ -4,6 +4,9 @@
   --nav-font: "Poppins",  sans-serif;
 }
 
+:root, [data-bs-theme=light] {
+  --bs-warning: blue;
+}
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
@@ -139,7 +142,8 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: white;
+    color: var(--bs-dark);
+    opacity: 70%;
   }
 }
 
@@ -422,6 +426,12 @@ h6 {
   font-weight: 800;
   margin-top: 30px;
   margin-bottom: 10px;
+}
+.page-title h2 {
+  background-color: orange;
+  color: black;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .page-title .breadcrumbs ol {
@@ -808,12 +818,6 @@ Recipe 1 → Classic Meatloaf
   margin: 0;
 }
 
-
-
-
-  
-
-
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
@@ -913,4 +917,91 @@ Recipe 1 → Classic Meatloaf
   font-size: 14px;
   font-family: var(--nav-font);
   color: color-mix(in srgb, gray, transparent 50%);
+}
+
+.recipe-form {
+  background-color: orange;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* =================
+Center the section 
+===================*/
+/* Section centering */
+.unique-recipe-section {
+    min-height: 80vh;
+}
+
+/* Card styling */
+.unique-recipe-card {
+    background-color: black;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.4);
+}
+
+/* Header styling */
+.unique-recipe-title {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    padding: 0.6rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Form container */
+.unique-recipe-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input wrapper - spacing between fields */
+.unique-input-wrapper {
+    margin-bottom: 1rem; /* adds gap between inputs */
+}
+
+/* Input fields */
+.unique-input {
+    background-color: transparent;
+    color: white;
+    border: 2px solid orange !important;
+    font-size: 1rem;
+}
+
+.unique-input:focus {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    border-color: white !important;
+    box-shadow: 0 0 8px orange;
+}
+
+/* Labels */
+.unique-label {
+    background: black transparent !important;
+    color: orange !important;
+    padding-left: 0.4rem;
+}
+
+/* Submit button */
+.unique-submit-btn {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 0.6rem 1.2rem;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.unique-submit-btn:hover {
+    background-color: rgb(239, 157, 4);
+    color: white;
+    border-color: orange;
 }
