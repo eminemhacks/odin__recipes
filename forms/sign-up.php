@@ -6,18 +6,22 @@
     <section class="section  d-flex justify-content-center align-items-center unique-recipe-section" style="padding-top: 140px;">
         <div class="unique-recipe-card">
 
-            <h2 class="unique-recipe-title text-center">Add Recipes</h2>
+            <h2 class="unique-recipe-title text-center">Sign-up for OdinRecipes</h2>
                         
             <form class="unique-recipe-form" action="submit-recipe.php" method="POST">
-                <label for="title" class="unique-label">Recipe Title:</label>
+                <label for="name" class="unique-label">Full name:</label>
                 <div class="form-floating unique-input-wrapper">
-                    <input type="text" id="title" class="form-control unique-input" name="title" placeholder="e.g. Dill Pickle Meatloaf" required >
+                    <input type="text" id="name" class="form-control unique-input" name="name" placeholder="e.g. John Doe" required >
                 </div>
-                               
-                <label for="ingredients" class="unique-label">Ingredients:</label>
+
+                <label for="email" class="unique-label">Email:</label>
                 <div class="form-floating unique-input-wrapper">
-                    
-                    <input type="text" id="ingredients" class="form-control unique-input" name="ingredients" placeholder="e.g. Tomato, Eggs, Turnips"required>
+                    <input type="email" id="email" class="form-control unique-input" name="email" placeholder="e.g. dillpickle@example.com" required >
+                </div>
+
+                <label for="country" class="unique-label">Country:</label>
+                <div class="form-floating unique-input-wrapper">
+                    <input type="text" id="country" class="form-control unique-input" name="country" placeholder="e.g. USA" required>
                 </div>
 
                 <label for="instructions" class="unique-label">Instructions:</label>
@@ -28,7 +32,7 @@
                 </div>
                 <label for="recipeImage" class="unique-label">Upload Recipe Image(s):</label>
                 <input type="file" name="recipeImage" id="recipeImage" accept="image/*">
-                
+                <br>
                 <button type="submit" class="btn unique-submit-btn">Upload Recipe</button>
             </form>
         </div>
