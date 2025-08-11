@@ -29,7 +29,10 @@
                 <label for="recipeImage" class="unique-label">Upload Recipe Image(s):</label>
                 <input type="file" name="recipeImage" id="recipeImage" accept="image/*">
                 
-                <button type="submit" class="btn unique-submit-btn">Upload Recipe</button>
+                <button type="submit" class="btn unique-upload-btn">Upload Recipe</button>
+                <div class="form-link">
+                    <p>Already have an account? <a href="sign-in.php">Sign in</a></p>
+                </div>
             </form>
         </div>
     </section>
