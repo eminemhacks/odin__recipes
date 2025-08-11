@@ -37,7 +37,7 @@
             
             <nav id="navmenu" class="navmenu">
               <ul>
-                <li><a href="#hero" class="active">Home<br></a></li>
+                <li><a href="../home_page#hero" class="active">Home<br></a></li>
                 <li><a href="../home_page#about">About<br></a></li>
                 <li><a href="../home_page#recipe">Recipes<br></a></li>
                 <!-- <li><a href="#services">Services<br></a></li>-->
