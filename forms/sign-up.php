@@ -1,6 +1,4 @@
-<?php
-    include '../templates/header.html';
-?>
+
 <main class="main b-image">
     <!-- <img src="../assets/img/hero-bg.png" alt="Delicious food background" data-aos-delay="50"> -->
     <section class="section  d-flex justify-content-center align-items-center unique-recipe-section" style="padding-top: 140px;">
