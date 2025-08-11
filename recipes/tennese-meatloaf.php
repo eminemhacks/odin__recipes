@@ -36,11 +36,11 @@
             
             <nav id="navmenu" class="navmenu">
               <ul>
-                <li><a href="../home_page#hero" class="active">Home<br></a></li>
+                <li><a href="#meatloaf" class="active">Home<br></a></li>
                 <li><a href="../home_page#about">About<br></a></li>
                 <li><a href="../home_page#recipe">Recipes<br></a></li>
-                <!-- <li><a hrefservices">Services<br></a></li>-->
-                <li><a href="../home_page#social-links">Contact<br></a></li>
+                <li><a href="#our-services">Services<br></a></li>
+                <li><a href="#social-links">Contact<br></a></li>
               </ul>
               <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>

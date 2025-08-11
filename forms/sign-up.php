@@ -24,7 +24,7 @@
                     <input type="text" id="country" class="form-control unique-input" name="country" placeholder="e.g. USA" required>
                 </div>
                 <a href=""></a>                
-                <button type="submit" class="btn unique-submit-btn">Upload Recipe</button>
+                <button type="submit" class="btn unique-submit-btn">Submit</button>
             </form>
         </div>
     </section>
